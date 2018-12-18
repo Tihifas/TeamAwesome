@@ -1,0 +1,32 @@
+﻿body {
+    margin: 4rem;
+}
+h1 {
+    margin-left: 5%;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+label, input {
+    display:block;
+    margin: 1% 0;
+}
+label:first-of-type, #addItem {
+    margin-top: 4%;
+}
+.picContainer {
+    float: left;
+    margin: 5%;
+}
+.inPic {
+    color: blue;
+    position: relative;
+    bottom: 3rem;
+    text-align: center;
+}
+.priceBox {
+    padding: 1rem;
+    border: 2px solid rgb(44,44,44);
+    background-color: rgb(222,222,222);
+}

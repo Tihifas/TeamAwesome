@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sælg vare</title>
+    <link rel="stylesheet" href="Style/site.css" />
+</head>
+<body>
+    <header>
+        <h1>
+            Sælg vare
+        </h1>
+    </header>
+    <div id="picUpload" class="picContainer">
+        <img id="uploadBillede" src="Images/uploadPic.png" />
+        <p class="inPic">
+            Klik for at uploade et billede
+        </p>
+    </div>
+    <div class="picContainer">
+        <label for="titel">Titel</label>
+        <input id="titel" placeholder="Min vare"/>
+        <label for="beskrivelse">Beskrivelse</label>
+        <textarea id="beskrivelse" rows="4" cols="60" placeholder="Tilføj en beskrivelse af din vare"></textarea>
+        <label for="price">Pris</label>
+        <input id="price" type="number"/>
+        <input id="addItem" type="submit" value="Tilføj vare"/>
+    </div>
+</body>
+</html>
