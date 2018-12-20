@@ -1,32 +1,117 @@
-﻿body {
-    margin: 4rem;
+﻿* {
+    --nav-color: rgba(205,222,82, 1);
 }
-h1 {
+
+h1, h2, h3, h4 {
     margin-left: 5%;
 }
-img {
+
+div.picContainer img, .jens img {
     height: 100%;
     width: 100%;
 }
+
 label, input {
-    display:block;
+    display: block;
     margin: 1% 0;
 }
+
 label:first-of-type, #addItem {
     margin-top: 4%;
 }
+
 .picContainer {
     float: left;
     margin: 5%;
 }
+
 .inPic {
     color: blue;
     position: relative;
     bottom: 3rem;
     text-align: center;
 }
+
+#picUpload:hover {
+    cursor: pointer;
+}
+
 .priceBox {
     padding: 1rem;
     border: 2px solid rgb(44,44,44);
     background-color: rgb(222,222,222);
+}
+
+.loginForm {
+    margin: 15rem 35%;
+    width: 20rem;
+    padding: 5rem 0 2rem 0;
+    border-radius: 10%;
+    box-shadow: 0 5px #888888;
+    background-color: var(--nav-color);
+    display: none;
+    position: fixed;
+}
+/*.loginForm::after {
+    content: "X";
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: white;
+    position: relative;
+    bottom: 14.5rem;
+    left: 90%;
+}*/
+
+.loginForm #loginClose {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: white;
+    position: relative;
+    left: 42%;
+    bottom: 14.5rem;
+    padding: 8px;
+}
+
+.loginForm #loginClose:hover {
+    cursor: pointer;
+    color: rgb(80,150,80);
+}
+
+.loginForm h2, .loginForm input {
+    margin: 1rem;
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+.loginForm #username, .loginForm #password {
+    color: black;
+}
+
+.loginForm #loginBtn {
+    background-color: rebeccapurple;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.loginForm #loginBtn:hover {
+    cursor: pointer;
+}
+
+.jens {
+    margin-left: 5%;
+    height: 200px;
+    width: 200px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    background-color: #0073b1;
+    padding: 3rem;
+    border-radius: 10%;
+}
+
+.jens a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }

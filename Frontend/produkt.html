@@ -3,16 +3,65 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="shortcut icon" href="Images/transparentLogo.png" />
+    <link href="Style/nav.css" rel="stylesheet" />
     <link rel="stylesheet" href="Style/site.css" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/login.js"></script>
 </head>
 <body>
+    <!--#region navigation bar-->
+    <nav id="navBar" class="navigation">
+        <ul>
+            <li>
+                <a href="/salg.html" Sælg>Sælg</a>
+            </li>
+            <li>
+                <a href="latest.html">
+                    Seneste nyt
+                </a>
+            </li>
+            <li>
+                <a href="auktion.html">
+                    Live auktion
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img id="logo" src="Images/transparentLogo.png" />
+                </a>
+            </li>
+            <li>
+                <a id="btnLogin">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="newUser.html">
+                    Ny Bruger
+                </a>
+            </li>
+            <li>
+                <a href="userpage.html">
+                    Min Side
+                </a>
+            </li>
+            <li>
+                <a href="hjaelp.html">
+                    Hjælp
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--#endregion-->
+
     <header>
         <h1>
             <!--@Viewbag.ProductTitle-->
             Produktnavn
         </h1>
     </header>
-    
+
     <div class="picContainer">
         <img src="Images/uploadPic.png" />
         <!--Other picture as well-->
@@ -26,6 +75,15 @@
                 Køb nu pris: 1500
             </p>
         </div>
+    </div>
+    <div class="loginForm">
+        <center>
+            <h2>
+                Login
+            </h2>
+            <input id="username" placeholder="Brugernavn" required />
+            <input id="password" placeholder="Kodeord" type="password" required />
+        </center>
     </div>
 </body>
 </html>

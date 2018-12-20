@@ -1,0 +1,31 @@
+﻿/*Image on navigation bar*/
+#navigation a img {
+    width: 10rem;
+    height: 6rem;
+    margin: 0 1rem 0 1rem;
+}
+
+nav a {
+    color: rgb(200,200,200);
+    text-decoration: none;
+    display: inline;
+    text-shadow: 1px 1px rgb(111,111,111);
+    padding: 2.5rem;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+    nav a:hover {
+        color: white;
+        text-shadow: none;
+    }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+    }
